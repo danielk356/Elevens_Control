@@ -24,19 +24,6 @@ class DrawPanel extends JPanel implements MouseListener {
         super.paintComponent(g);
         int x = 130;
         int y = 10;
-        /* for (int i = 0; i < hand.size(); i++) {
-            Card c = hand.get(i);
-            if (c.getHighlight()) {
-                // draw the border rectangle around the card
-                g.drawRect(x, y, c.getImage().getWidth(), c.getImage().getHeight());
-            }
-
-            // establish the location of the rectangle "hitbox"
-            c.setRectangleLocation(x, y);
-
-            g.drawImage(c.getImage(), x, y, null);
-            x = x + c.getImage().getWidth() + 10;
-        } */
 
         int index = 0;
         for (int row = 0; row < 3; row++) {
